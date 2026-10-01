@@ -4,7 +4,8 @@ namespace SMKRestaurant.Helpers
 {
     public static class Database
     {
-        private static string connectionString = "Server=localhost;Database=SMKRestaurant;Trusted_Connection=True;TrustServerCertificate=True;";
+        // Ubah Server=localhost menjadi Server=RUCKIYE\SQLEXPRESS
+        private static string connectionString = @"Server=RUCKIYE\SQLEXPRESS;Database=SMKRestaurant;Trusted_Connection=True;TrustServerCertificate=True;";
 
         public static SqlConnection GetConnection()
         {
