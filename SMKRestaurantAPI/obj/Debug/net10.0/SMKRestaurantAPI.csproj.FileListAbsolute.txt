@@ -63,3 +63,4 @@ D:\Tugas_Project_PaDwi\SMKRestaurantAPI\obj\Debug\net10.0\refint\SMKRestaurantAP
 D:\Tugas_Project_PaDwi\SMKRestaurantAPI\obj\Debug\net10.0\SMKRestaurantAPI.pdb
 D:\Tugas_Project_PaDwi\SMKRestaurantAPI\obj\Debug\net10.0\SMKRestaurantAPI.genruntimeconfig.cache
 D:\Tugas_Project_PaDwi\SMKRestaurantAPI\obj\Debug\net10.0\ref\SMKRestaurantAPI.dll
+D:\Tugas_Project_PaDwi\SMKRestaurantAPI\obj\Debug\net10.0\SMKRestaurantAPI.sourcelink.json
