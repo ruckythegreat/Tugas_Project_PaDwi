@@ -1,7 +1,7 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
-    "net10.0-windows": {
+    "net10.0-windows7.0": {
       "Microsoft.Bcl.Cryptography/9.0.18": {
         "type": "package",
         "compile": {
@@ -1005,24 +1005,29 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net10.0-windows": [
+    "net10.0-windows7.0": [
       "Microsoft.Data.SqlClient >= 7.1.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\asus ZenBook\\.nuget\\packages\\": {}
+    "C:\\Users\\u\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TugasPaDwi\\Tugas_Project_PaDwi\\SMKRestaurant\\SMKRestaurant.csproj",
+      "projectUniqueName": "D:\\Tugas_Project_PaDwi\\SMKRestaurant\\SMKRestaurant.csproj",
       "projectName": "SMKRestaurant",
-      "projectPath": "D:\\TugasPaDwi\\Tugas_Project_PaDwi\\SMKRestaurant\\SMKRestaurant.csproj",
-      "packagesPath": "C:\\Users\\asus ZenBook\\.nuget\\packages\\",
-      "outputPath": "D:\\TugasPaDwi\\Tugas_Project_PaDwi\\SMKRestaurant\\obj\\",
+      "projectPath": "D:\\Tugas_Project_PaDwi\\SMKRestaurant\\SMKRestaurant.csproj",
+      "packagesPath": "C:\\Users\\u\\.nuget\\packages\\",
+      "outputPath": "D:\\Tugas_Project_PaDwi\\SMKRestaurant\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\asus ZenBook\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\u\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
       ],
       "originalTargetFrameworks": [
         "net10.0-windows"
@@ -1031,8 +1036,7 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net10.0-windows": {
-          "framework": "net10.0-windows7.0",
+        "net10.0-windows7.0": {
           "targetAlias": "net10.0-windows",
           "projectReferences": {}
         }
@@ -1047,11 +1051,10 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
-      "net10.0-windows": {
-        "framework": "net10.0-windows7.0",
+      "net10.0-windows7.0": {
         "targetAlias": "net10.0-windows",
         "dependencies": {
           "Microsoft.Data.SqlClient": {
@@ -1078,7 +1081,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

@@ -1,3 +1,4 @@
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using SMKRestaurantAPI.Models;
@@ -9,12 +10,12 @@ namespace SMKRestaurantAPI.Controllers
     public class MenuController : ControllerBase
     {
         // SQL Server connection
-private readonly string connectionString = 
-    @"Server=RUCKIYE\SQLEXPRESS;
-      Database=SMKRestaurant;
-      Trusted_Connection=True;
-      TrustServerCertificate=True;";
-      
+        private readonly string connectionString =
+            @"Server=NAPTUNE\SQLEXPRESS;
+              Database=SMKRestaurant;
+              Trusted_Connection=True;
+              TrustServerCertificate=True;";
+
         [HttpGet]
         public IActionResult GetMenu()
         {
@@ -28,8 +29,7 @@ private readonly string connectionString =
             }
 
             // Store menu data
-            List<MenuResponse> menus =
-                new List<MenuResponse>();
+            List<MenuResponse> menus = new List<MenuResponse>();
 
             // SQL query
             string sql = @"
@@ -41,17 +41,14 @@ private readonly string connectionString =
                 FROM MsMenu";
 
             // Connect to SQL Server
-            using (SqlConnection conn =
-                new SqlConnection(connectionString))
-            using (SqlCommand cmd =
-                new SqlCommand(sql, conn))
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(sql, conn))
             {
                 // Open database connection
                 conn.Open();
 
                 // Execute query
-                using (SqlDataReader reader =
-                    cmd.ExecuteReader())
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     // Read every menu
                     while (reader.Read())
