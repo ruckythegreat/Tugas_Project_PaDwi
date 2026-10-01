@@ -849,11 +849,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\TugasPaDwi\\Tugas_Project_PaDwi\\SMKRestaurantAPI\\SMKRestaurantAPI.csproj",
+      "projectUniqueName": "D:\\TugasPaDwi\\Tugas_Project_PaDwi\\SMKRestaurantAPI\\SMKRestaurantAPI.csproj",
       "projectName": "SMKRestaurantAPI",
-      "projectPath": "d:\\TugasPaDwi\\Tugas_Project_PaDwi\\SMKRestaurantAPI\\SMKRestaurantAPI.csproj",
+      "projectPath": "D:\\TugasPaDwi\\Tugas_Project_PaDwi\\SMKRestaurantAPI\\SMKRestaurantAPI.csproj",
       "packagesPath": "C:\\Users\\asus ZenBook\\.nuget\\packages\\",
-      "outputPath": "d:\\TugasPaDwi\\Tugas_Project_PaDwi\\SMKRestaurantAPI\\obj\\",
+      "outputPath": "D:\\TugasPaDwi\\Tugas_Project_PaDwi\\SMKRestaurantAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\asus ZenBook\\AppData\\Roaming\\NuGet\\NuGet.Config"

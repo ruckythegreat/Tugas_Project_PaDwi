@@ -9,12 +9,12 @@ namespace SMKRestaurantAPI.Controllers
     public class MenuController : ControllerBase
     {
         // SQL Server connection
-        private readonly string connectionString =
-            @"Server=Naptune\SQLEXPRESS;
-              Database=SMKRestaurant;
-              Trusted_Connection=True;
-              TrustServerCertificate=True;";
-
+private readonly string connectionString = 
+    @"Server=RUCKIYE\SQLEXPRESS;
+      Database=SMKRestaurant;
+      Trusted_Connection=True;
+      TrustServerCertificate=True;";
+      
         [HttpGet]
         public IActionResult GetMenu()
         {
