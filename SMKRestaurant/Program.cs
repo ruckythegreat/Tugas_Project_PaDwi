@@ -1,15 +1,17 @@
+using SMKRestaurant.Helpers;
+
 namespace SMKRestaurant;
 
 static class Program
 {
-    /// <summary>
-    ///  The main entry point for the application.
-    /// </summary>
     [STAThread]
     static void Main()
     {
         ApplicationConfiguration.Initialize();
-        // DIPERBAIKI: Mengubah startup form ke FrmLogin
+
+        // Tangkap semua unhandled exception agar aplikasi tidak crash mentah
+        GlobalExceptionHandler.Register();
+
         Application.Run(new Forms.FrmLogin());
-    }    
+    }
 }

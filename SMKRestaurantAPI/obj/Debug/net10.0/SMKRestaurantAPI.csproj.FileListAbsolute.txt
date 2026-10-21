@@ -64,3 +64,8 @@ D:\Tugas_Project_PaDwi\SMKRestaurantAPI\obj\Debug\net10.0\refint\SMKRestaurantAP
 D:\Tugas_Project_PaDwi\SMKRestaurantAPI\obj\Debug\net10.0\SMKRestaurantAPI.pdb
 D:\Tugas_Project_PaDwi\SMKRestaurantAPI\obj\Debug\net10.0\SMKRestaurantAPI.genruntimeconfig.cache
 D:\Tugas_Project_PaDwi\SMKRestaurantAPI\obj\Debug\net10.0\ref\SMKRestaurantAPI.dll
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurantAPI\bin\Debug\net10.0\SMKRestaurantAPI.exe
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurantAPI\bin\Debug\net10.0\SMKRestaurantAPI.dll
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurantAPI\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurantAPI\bin\Debug\net10.0\Microsoft.OpenApi.dll
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurantAPI\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll

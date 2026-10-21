@@ -1,0 +1,13 @@
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurant.Shared\bin\Debug\net10.0\SMKRestaurant.Shared.deps.json
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurant.Shared\bin\Debug\net10.0\SMKRestaurant.Shared.dll
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurant.Shared\bin\Debug\net10.0\SMKRestaurant.Shared.pdb
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurant.Shared\obj\Debug\net10.0\SMKRestaurant.Shared.csproj.AssemblyReference.cache
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurant.Shared\obj\Debug\net10.0\SMKRestaurant.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurant.Shared\obj\Debug\net10.0\SMKRestaurant.Shared.AssemblyInfoInputs.cache
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurant.Shared\obj\Debug\net10.0\SMKRestaurant.Shared.AssemblyInfo.cs
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurant.Shared\obj\Debug\net10.0\SMKRestaurant.Shared.csproj.CoreCompileInputs.cache
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurant.Shared\obj\Debug\net10.0\SMKRestaurant.Shared.sourcelink.json
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurant.Shared\obj\Debug\net10.0\SMKRestaurant.Shared.dll
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurant.Shared\obj\Debug\net10.0\refint\SMKRestaurant.Shared.dll
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurant.Shared\obj\Debug\net10.0\SMKRestaurant.Shared.pdb
+D:\TugasPaDwi\Tugas_Project_PaDwi\SMKRestaurant.Shared\obj\Debug\net10.0\ref\SMKRestaurant.Shared.dll

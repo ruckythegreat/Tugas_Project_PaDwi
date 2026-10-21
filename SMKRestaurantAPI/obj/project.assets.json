@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net10.0": {
       "Microsoft.AspNetCore.OpenApi/10.0.1": {
@@ -353,6 +353,19 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "SMKRestaurant.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "7.1.1"
+        },
+        "compile": {
+          "bin/placeholder/SMKRestaurant.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SMKRestaurant.Shared.dll": {}
         }
       }
     }
@@ -835,33 +848,34 @@
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "SMKRestaurant.Shared/1.0.0": {
+      "type": "project",
+      "path": "../SMKRestaurant.Shared/SMKRestaurant.Shared.csproj",
+      "msbuildProject": "../SMKRestaurant.Shared/SMKRestaurant.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "Microsoft.AspNetCore.OpenApi >= 10.0.1",
-      "Microsoft.Data.SqlClient >= 7.1.1"
+      "Microsoft.Data.SqlClient >= 7.1.1",
+      "SMKRestaurant.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\u\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\asus ZenBook\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Tugas_Project_PaDwi\\SMKRestaurantAPI\\SMKRestaurantAPI.csproj",
+      "projectUniqueName": "D:\\TugasPaDwi\\Tugas_Project_PaDwi\\SMKRestaurantAPI\\SMKRestaurantAPI.csproj",
       "projectName": "SMKRestaurantAPI",
-      "projectPath": "D:\\Tugas_Project_PaDwi\\SMKRestaurantAPI\\SMKRestaurantAPI.csproj",
-      "packagesPath": "C:\\Users\\u\\.nuget\\packages\\",
-      "outputPath": "D:\\Tugas_Project_PaDwi\\SMKRestaurantAPI\\obj\\",
+      "projectPath": "D:\\TugasPaDwi\\Tugas_Project_PaDwi\\SMKRestaurantAPI\\SMKRestaurantAPI.csproj",
+      "packagesPath": "C:\\Users\\asus ZenBook\\.nuget\\packages\\",
+      "outputPath": "D:\\TugasPaDwi\\Tugas_Project_PaDwi\\SMKRestaurantAPI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\u\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+        "C:\\Users\\asus ZenBook\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -871,8 +885,13 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\TugasPaDwi\\Tugas_Project_PaDwi\\SMKRestaurant.Shared\\SMKRestaurant.Shared.csproj": {
+              "projectPath": "D:\\TugasPaDwi\\Tugas_Project_PaDwi\\SMKRestaurant.Shared\\SMKRestaurant.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -885,10 +904,11 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net10.0": {
+        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": {
@@ -919,7 +939,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -1344,6 +1364,26 @@
       "warningLevel": 1,
       "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
       "libraryId": "Microsoft.OpenApi",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Security.Cryptography.Pkcs' 9.0.18 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-2fmv-rv2c-59x7",
+      "libraryId": "System.Security.Cryptography.Pkcs",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Security.Cryptography.Pkcs' 9.0.18 has a known high severity vulnerability, https://github.com/advisories/GHSA-846f-f764-76mx",
+      "libraryId": "System.Security.Cryptography.Pkcs",
       "targetGraphs": [
         "net10.0"
       ]

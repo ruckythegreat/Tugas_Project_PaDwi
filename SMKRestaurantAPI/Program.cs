@@ -1,16 +1,21 @@
+using SMKRestaurantAPI.Data;
+using SMKRestaurantAPI.Middleware;
+using SMKRestaurantAPI.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add controller services
 builder.Services.AddControllers();
-
-// Add API explorer
 builder.Services.AddEndpointsApiExplorer();
 
-// Build application
+// Dependency Injection — Data & Services
+builder.Services.AddScoped<IMenuRepository, MenuRepository>();
+builder.Services.AddScoped<IMenuService, MenuService>();
+
 var app = builder.Build();
 
-// Map controller endpoints
+// Global error handling — harus paling atas
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 app.MapControllers();
 
-// Run API
 app.Run();

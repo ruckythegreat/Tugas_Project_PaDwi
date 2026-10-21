@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SMKRestaurant.Shared/SMKRestaurant.Shared.csproj" />
+  <Project Path="SMKRestaurant/SMKRestaurant.csproj" />
+  <Project Path="SMKRestaurantAPI/SMKRestaurantAPI.csproj" />
+</Solution>

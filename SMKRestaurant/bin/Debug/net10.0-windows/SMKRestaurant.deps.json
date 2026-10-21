@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v10.0": {
       "SMKRestaurant/1.0.0": {
         "dependencies": {
-          "Microsoft.Data.SqlClient": "7.1.1"
+          "Microsoft.Data.SqlClient": "7.1.1",
+          "SMKRestaurant.Shared": "1.0.0"
         },
         "runtime": {
           "SMKRestaurant.dll": {}
@@ -291,6 +292,17 @@
             "fileVersion": "9.0.1826.31522"
           }
         }
+      },
+      "SMKRestaurant.Shared/1.0.0": {
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "7.1.1"
+        },
+        "runtime": {
+          "SMKRestaurant.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -439,6 +451,11 @@
       "sha512": "sha512-pxuHw/tQXaHMRXEaKzzgpoGO8VeTPIzHbnp0KclXp6js5wPHn7VaqSCa8yRTAsZDcZ2XuIEnXGM2MbRDJFLBog==",
       "path": "system.threading.ratelimiting/9.0.18",
       "hashPath": "system.threading.ratelimiting.9.0.18.nupkg.sha512"
+    },
+    "SMKRestaurant.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

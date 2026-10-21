@@ -1,86 +1,44 @@
-
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
 using SMKRestaurantAPI.Models;
+using SMKRestaurantAPI.Services;
 
 namespace SMKRestaurantAPI.Controllers
 {
     [ApiController]
     [Route("menu")]
+    [Route("api/menu")]
     public class MenuController : ControllerBase
     {
-        // SQL Server connection
-        private readonly string connectionString =
-            @"Server=NAPTUNE\SQLEXPRESS;
-              Database=SMKRestaurant;
-              Trusted_Connection=True;
-              TrustServerCertificate=True;";
+        private readonly IMenuService _menuService;
 
-        [HttpGet]
-        public IActionResult GetMenu()
+        public MenuController(IMenuService menuService)
         {
-            // Check Authorization header
+            _menuService = menuService;
+        }
+
+        /// <summary>
+        /// GET /menu atau GET /api/menu
+        /// Header: Authorization (wajib ada)
+        /// </summary>
+        [HttpGet]
+        [ProducesResponseType(typeof(ApiResponse<IReadOnlyList<MenuDto>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiErrorResponse), StatusCodes.Status401Unauthorized)]
+        public async Task<IActionResult> GetMenu(CancellationToken cancellationToken)
+        {
             if (!Request.Headers.ContainsKey("Authorization"))
             {
-                return BadRequest(new
+                return Unauthorized(new ApiErrorResponse
                 {
-                    message = "Authorization required"
+                    Message = "Authorization required"
                 });
             }
 
-            // Store menu data
-            List<MenuResponse> menus = new List<MenuResponse>();
+            var menus = await _menuService.GetMenusAsync(cancellationToken);
 
-            // SQL query
-            string sql = @"
-                SELECT
-                    Name,
-                    ISNULL(Carbo, 0) AS Carbo,
-                    ISNULL(Protein, 0) AS Protein,
-                    ISNULL(Price, 0) AS Price
-                FROM MsMenu";
-
-            // Connect to SQL Server
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            using (SqlCommand cmd = new SqlCommand(sql, conn))
-            {
-                // Open database connection
-                conn.Open();
-
-                // Execute query
-                using (SqlDataReader reader = cmd.ExecuteReader())
-                {
-                    // Read every menu
-                    while (reader.Read())
-                    {
-                        string name =
-                            reader["Name"] != DBNull.Value
-                                ? reader["Name"].ToString()!
-                                : "";
-
-                        int carbo =
-                            Convert.ToInt32(reader["Carbo"]);
-
-                        int protein =
-                            Convert.ToInt32(reader["Protein"]);
-
-                        int price =
-                            Convert.ToInt32(reader["Price"]);
-
-                        // Add menu to response
-                        menus.Add(new MenuResponse
-                        {
-                            Name = name,
-                            Description =
-                                $"Carbo : {carbo}, Protein {protein}",
-                            Price = price
-                        });
-                    }
-                }
-            }
-
-            // Return HTTP 200
-            return Ok(menus);
+            return Ok(ApiResponse<IReadOnlyList<MenuDto>>.Ok(
+                menus,
+                message: "Menu berhasil diambil.",
+                count: menus.Count));
         }
     }
 }
